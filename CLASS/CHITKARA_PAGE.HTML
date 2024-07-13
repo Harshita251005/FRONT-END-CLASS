@@ -13,6 +13,15 @@
          .box img{filter: none;margin-left: 15%;margin-top: 7%;}
          p{margin-left: 7%;font-family: Arial, Helvetica, sans-serif;margin-top: 4%}
          input{margin-left: 7%;margin-top: 2%;width: 85%;}
+         select{margin-left: 7%;margin-top: 2%;width: 85%;}
+         .check input{float: left;}
+         .check p{ font-size: 14px;margin-left: 15%;}
+         .button input{background-color: darkred;color: white;border: darkred;height: 30px;font-size: larger;cursor: pointer;}
+         .forgot{font-size: 14px;cursor: pointer;}
+         .privacy {margin-left: 7%;width: 85%;margin-top: 4%;font-size: 14px; }
+         .privacy a{color: black;}
+         a:href{text-decoration: none;}
+         #images{margin-left: 11%;}
     </style>
 <body>
     <div class="box">
@@ -22,8 +31,34 @@
         <p>Password</p>
         <input type="password" name="Password">
         <p>Session</p>
-        <input type="text" name="Password">
+        <select>
+            <option value="Select">Select</option>
+            <option value="Jul-Dec 2022">Jul-Dec 2022</option>
+            <option value="Jan-June 2023">Jan-June 2023</option>
+            <option value="Jul-Dec 2023">Jul-Dec 2023</option>
+            <option value="Jan-June 2024">Jan-June 2024</option>
+            <option value="Jul-Dec 2024">Jul-Dec 2024</option>
+        </select>
+        <div class="check">
+        <input type="checkbox">
+        <p>Remember Password</p>
+        </div>
+        <div class="button">
+        <input type="button" name="Sign In" value="Sign In"> 
+        </div>
+       <p class="forgot">Forget your password ? Click here</p>
+       <div class="privacy">
+        <a href="/">Privacy Policy</a></div>
+        <div class="images">
+        <div class="img">
+        <img src="">
     </div>
+    <div id="images">
+      <img src="https://cuiet.codebrigade.in/images/apple_store_icon.png" width="15%">
+      <img src="https://cuiet.codebrigade.in/images/gplaystore_icon.png" width="15%">
+    </div>
+    </div>
+   
 </body>
 </html>
 
