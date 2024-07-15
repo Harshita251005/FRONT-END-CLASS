@@ -11,37 +11,68 @@
          padding: 0%;
          margin:0%;
         }
-         body{background-image: url("");width:100% ;background-repeat: no-repeat;position: fixed;}
-         .box{background-color:#ffffff;border: 2px solid #cccccc;;width:285px;margin-left: 63%;height: 550px;padding-top: 0px;margin-top: 6%;}
-         .img{filter: none;margin-left: 15%;margin-top: 7%;display: block;}
-         p{margin-left: 7%;font-family: Arial, Helvetica, sans-serif;margin-top: 4%;font-size: 15px;}
-         input{margin-left: 7%;margin-top: 2%;width: 85%;}
-         select{margin-left: 7%;margin-top: 2%;width: 85%;}
-         .check{display: flex;}
+        .red{background-color: #ed3237; width: 100%;height:6px;}
+        .red img{margin-left: 1450px;cursor: pointer;}
+
+        body{background-image: url("https://images.static-collegedunia.com/public/college_data/images/campusimage/1567495325acad.jpg");width:100% ;background-repeat: no-repeat;position: fixed;}
+
+        .box{background-color:#ffffff;border: 2px solid #cccccc;;width:285px;margin-left: 63%;height: 550px;padding-top: 0px;margin-top: 6%;}
+        .box img{filter: none;margin-top: 7%;padding: 0%; border: 0%;margin-left: 15%;}
         
-         .check p{ font-size: 14px;}
-         .button input{background-color: darkred;color: white;border: darkred;height: 30px;font-size: larger;cursor: pointer;}
-         .forgot{font-size: 14px;cursor: pointer;}
-         .privacy {margin-left: 7%;width: 85%;margin-top: 4%;font-size: 14px; }
-         .privacy a{color: black;}
-         a:href{text-decoration: none;}
-         #images{margin-left: 11%;}
+        .username{ margin-top: 7%;}
+        label{margin-left: 7%;font-family: Arial, Helvetica, sans-serif;font-size: 15px;}
+        .username input{margin-left: 7%;margin-top: 2%;width: 78%;height:22px;border: 1px solid #7f9db9;}
+
+        .password{margin-top: 4%;}
+        .password input{margin-left: 7%;margin-top: 2%;width: 78%;height:22px;border: 1px solid #7f9db9;}
+
+        .session{margin-top: 4%;}
+        .session select{margin-left: 7%;margin-top: 2%;width: 78%;height:22px;border: 1px solid #7f9db9;}
+
+        .check {margin-top: 3%;margin-left: 7%;}
+        .check p {display: inline;font-family: Arial, Helvetica, sans-serif;font-size: 14px;}
+
+        .signin img{ margin-left: 7%;margin-top: 3%; cursor: pointer;}
+
+        .forgot {font-size: 12px;cursor: pointer;margin-left: 7%;font-family: Arial, Helvetica, sans-serif;}
+        
+
+        .privacy {margin-left: 7%;width: 85%;margin-top: 4%;font-size: 12px;font-family: Arial, Helvetica, sans-serif; }
+        .privacy a{color: #7f9db9;}
+         
+        .images{display: flex;gap: 10%;cursor: pointer;}
+        .image1{margin-left: 20%;margin-top: 3%;}
+        .image2 {margin-top: 3%;}
+
+        .mobile{ margin-left: 18%;font-family: Arial, Helvetica, sans-serif;font-weight: bolder;font-size: 12px;margin-top: 1%;}
+
+        .foot{display: flex;margin-top:3%}
+        .poweredby{ font-family: Arial, Helvetica, sans-serif;margin-left: 7%;font-size: 14px;color: #545454;margin-top: 4%;}
+
     </style>
 <body>
+
+    <div class="red">
+        <img src="https://cuiet.codebrigade.in/cb_top_right_icon.png" size="75*44px">
+    </div>
+
     <div class="box">
         <div class="img">
-            <img src="https://cuiet.codebrigade.in//images/logo_373.png" width="80%">
+            <img src="https://cuiet.codebrigade.in//images/logo_373.png" width="70%">
         </div>
+
         <div class="username">
-            <p>Username</p>
-            <input type="text" name="Username">
+        <label for="username">Username</label>
+            <input type="text" name="Username" id="username">
         </div>
+
         <div class="password">
-            <p>Password</p>
-            <input type="password" name="Password">
+            <label for="password">Password</label>
+            <input type="password" name="Password" id="password">
         </div>
+
         <div class="session">
-            <p>Session</p>
+            <label for="session">Session</label>
             <select>
                 <option value="Select">Select</option>
                 <option value="Jul-Dec 2022">Jul-Dec 2022</option>
@@ -51,27 +82,49 @@
                 <option value="Jul-Dec 2024">Jul-Dec 2024</option>
             </select>
         </div>
+
         <div class="check">
             <input type="checkbox">
             <p>Remember Password</p>
         </div>
-        <div class="button">
-            <input type="button" name="Sign In" value="Sign In"> 
+
+        <div class="signin">
+            <img src="https://cuiet.codebrigade.in//images/login_bws_btn.png"> 
         </div>
 
        <p class="forgot">Forget your password ? Click here</p>
+
        <div class="privacy">
-        <a href="/">Privacy Policy</a></div>
-        <div class="images">
-        <div class="img">
-        <img src="">
+        <a href="/">Privacy Policy</a>
+       </div>
+       
+      <div class="images">
+        <div class="image1">
+        <img src="https://cuiet.codebrigade.in/images/apple_store_icon.png">
+        </div>
+        <div class="image2">
+        <img src="https://cuiet.codebrigade.in/images/gplaystore_icon.png">
+        </div>
+      </div>
+
+      <div class="mobile">
+        <p> Mobile App Code : 800002</p>
+      </div>
+      
+      <div class="foot">
+        <div class="poweredby">
+        <p> Powered by</p>
+        </div>
+        <div class="image3">
+            <img src="https://cuiet.codebrigade.in//images/code-brigade-logo-small.png" width="100px">
+        </div>
+      </div>
+
     </div>
-    <div id="images">
-      <img src="https://cuiet.codebrigade.in/images/apple_store_icon.png" width="15%">
-      <img src="https://cuiet.codebrigade.in/images/gplaystore_icon.png" width="15%">
-    </div>
-    </div>
-   
 </body>
 </html>
+
+
+
+
 
