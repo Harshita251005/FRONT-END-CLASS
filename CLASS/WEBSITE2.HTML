@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSITE2</title>
-</head>
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-54e7be3a62ca9b7580d7f8c669f59e74.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.cs">
+
+
 <style>
     *{
         padding: 0%;
         margin: 0%;
         font-family: sans-serif;
+        box-sizing: border-box;
     }
-    .header{background-color:#63300e;height: 55px;width: 100%;display: flex;gap: 10px;cursor: pointer;}
-    .camera img{margin-left:60px ;padding-top: 11px;color: white;background-color: #63300e;}
-    .h{color: white;font-size:xx-large;font-family: sans-serif;padding-top: 9px;}
+    .header{background-color:#63300e;height: 54.4px;display: flex;gap: 10px;cursor: pointer;}
+    .header i{color: rgb(255, 255, 255);margin-left: 49px;padding: 11px;}
+
+    .h{color: rgb(255, 255, 255);font-size:30.4px;padding-top: 9px;}
     .mid{background-color: #EFE2E2;margin:20px 160px;border-radius: 8px;height: 85px;}
     h1{color: rgb(22, 22, 141);font-size: 1.5em;padding-left: 23px;padding-top: 20px;}
    .mid p{padding-left: 23px; padding-top: 1px;}
+
    .grid{width: 80vw;margin: 20px auto;display: grid;grid-auto-rows: 200px;gap: 10px;grid-template-columns: repeat(auto-fill, minmax(300px,1fr));}
-   .grid img{border-radius: 10px;position: relative;}
-   .grid img:hover{opacity: 0.5;cursor: pointer;filter: grayscale(80%)};
-   .grid i{position: absolute;font-size: 3.4rem;top: 40%;left: 45%;transform: scale(0);transition: 300ms;transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);}
-   .i{margin-right: 10px;}
+   .grid div{border-radius: 10px;position: relative;overflow: hidden;cursor: pointer;}
+   .grid div img{border-radius: 10px;position: relative; transition: 200ms; overflow-clip-margin :content-box;overflow: clip;}
+   .grid div img:hover{opacity: 0.5;cursor: pointer;filter: grayscale(80%);}
+   .grid  div i{position: absolute; top: 54%;left: 51.5%;transform: translate(-50%, -50%) scale(0);transition: transform 0.3s ease, opacity 0.3s ease;opacity: 0;font-size: 57.4px;cursor: default;}
+   .grid div:hover i{  transform: translate(-50%, -50%) scale(1);opacity: 1;}
     
 </style>
+</head>
 <body>
     <div class="header">
-        <div class="camera"><img src="data:image/png;base64,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"height="35px" ></div>
+        <div><i class="fa-solid fa-camera-retro h" ></i></div>
         <div class="h"><p>Photography Blog</p></div>
     </div>
+
     <div class="mid"> <h1>Images</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, soluta quas!</p></div>
+
     <div class="grid">
         <div>
             <img src="https://images.unsplash.com/photo-1721423297705-f7da8f386dc4?w=600&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"height="100%" width="100%">
